@@ -60,17 +60,17 @@ public class Player : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W))
             {
-                transform.rotation = Quaternion.Euler(0, m_camera.transform.rotation.eulerAngles.y + 45, 0);
+                transform.rotation = Quaternion.Euler(0, m_camera.transform.rotation.eulerAngles.y + 45, 0).normalized;
                 Move();
             }
             else if (Input.GetKey(KeyCode.S))
             {
-                transform.rotation = Quaternion.Euler(0, m_camera.transform.rotation.eulerAngles.y + 135, 0);
+                transform.rotation = Quaternion.Euler(0, m_camera.transform.rotation.eulerAngles.y + 135, 0).normalized;
                 Move();
             }
             else
             {
-                transform.rotation = Quaternion.Euler(0, m_camera.transform.rotation.eulerAngles.y + 90, 0);
+                transform.rotation = Quaternion.Euler(0, m_camera.transform.rotation.eulerAngles.y + 90, 0).normalized;
                 Move();
             }
         }
@@ -78,17 +78,17 @@ public class Player : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W))
             {
-                transform.rotation = Quaternion.Euler(0, m_camera.transform.rotation.eulerAngles.y + 315, 0);
+                transform.rotation = Quaternion.Euler(0, m_camera.transform.rotation.eulerAngles.y + 315, 0).normalized;
                 Move();
             }
             else if (Input.GetKey(KeyCode.S))
             {
-                transform.rotation = Quaternion.Euler(0, m_camera.transform.rotation.eulerAngles.y + 225, 0);
+                transform.rotation = Quaternion.Euler(0, m_camera.transform.rotation.eulerAngles.y + 225, 0).normalized;
                 Move();
             }
             else
             {
-                transform.rotation = Quaternion.Euler(0, m_camera.transform.rotation.eulerAngles.y + 270, 0);
+                transform.rotation = Quaternion.Euler(0, m_camera.transform.rotation.eulerAngles.y + 270, 0).normalized;
                 Move();
             }
         }
